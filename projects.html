@@ -1,0 +1,706 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="LOGO.jpg" type="image/png">
+        <title>Macziom Architects</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/ARCmain.css">
+        
+        <link rel="stylesheet" href="css/bootstrap.css">
+<!--	<link rel="stylesheet" href="css/bootstrap2.css">-->
+        
+        <link rel="stylesheet" href="vendors/linericon/style.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/ARCfont-awesome.min.css">
+        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+        <link rel="stylesheet" href="vendors/animate-css/animate.css">
+        <link rel="stylesheet" href="vendors/popup/magnific-popup.css">
+        <!-- main css -->
+        
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+	    <link rel="stylesheet" href="css/main2.css">
+       
+        <link rel="stylesheet" href="css/linearicons.css">
+	
+        
+        
+        <style>
+            .parallax {
+              /* The image used */
+              background-image: url("PB.jpg");
+
+              /* Set a specific height */
+              min-height: 500px; 
+
+              /* Create the parallax scrolling effect */
+              background-attachment: fixed;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+            
+            @media (min-width: 200px) and (max-width: 991px){
+        .center_align{
+            text-align: center
+        }
+    }
+    @media (min-width: 992px){
+        .site-section-heading{
+            text-align: left
+        }
+    }
+                   
+            
+            
+            
+            
+/*          For project area  */
+            
+            .project-area{padding-bottom:100px}@media (max-width: 991px){.project-area{padding-bottom:40px}}.project-area .filters{text-align:center}@media (max-width: 991px){.project-area .filters{margin-top:40px}}.project-area .filters ul{padding:0}@media (max-width: 991px){.project-area .filters ul{text-align:center}}.project-area .filters ul li{list-style:none;display:inline-block;padding:0 15px;cursor:pointer;position:relative;text-transform:uppercase;font-size:13px;color:#263a4e}.project-area .filters ul li:last-child{padding-right:0}@media (max-width: 991px){.project-area .filters ul li:first-child{padding-left:0}}.project-area .filters ul li.active,.project-area .filters ul li:hover{color:#ac7b00}.project-area .filters-content .show{opacity:1;visibility:visible;transition:all 350ms}.project-area .filters-content .hide{opacity:0;visibility:hidden;transition:all 350ms}.project-area .filters-content img{border-radius:10px;width:100%}
+            
+            .section-gap-top{padding-top:30px}@media (max-width: 991px){.section-gap-top{padding-top:70px}}
+            
+            .middle{transition:0.5s ease;position:absolute;right:0;top:0px;min-width:290px;background:#fff;box-shadow:0px -10px 30px rgba(38,58,78,0.1);padding:34px 30px}@media (min-width: 1200px){.single-project .middle{right:10px}}.single-project .middle h4{font-size:20px;margin-bottom:5px}.single-project .middle .cat{-webkit-transition:all 0.3s ease 0s;-moz-transition:all 0.3s ease 0s;-o-transition:all 0.3s ease 0s;transition:all 0.3s ease 0s}.single-project:hover .middle .cat{color:#ac7b00}
+            
+            .overlay-bg{background:rgba(0,0,0,0.3)}.blog-page{background:#f9f9ff}.blog-header-content h1{max-width:500px;margin-left:auto;margin-right:auto}@media (max-width: 414px){.blog-header-content h1{font-size:30px}}.blog-header-content p{margin:20px 0px}.top-category-widget-area{background-color:#f9f9ff}.top-category-widget-area .single-cat-widget{position:relative;text-align:center}.top-category-widget-area .single-cat-widget .overlay-bg{background:rgba(0,0,0,0.85);margin:7%;-webkit-transition:all 0.3s ease 0s;-moz-transition:all 0.3s ease 0s;-o-transition:all 0.3s ease 0s;transition:all 0.3s ease 0s}.top-category-widget-area .single-cat-widget img{width:100%}.top-category-widget-area .single-cat-widget .content-details{top:32%;left:0;right:0;margin-left:auto;margin-right:auto;color:#fff;bottom:0px;position:absolute}.top-category-widget-area .single-cat-widget .content-details h4{color:#fff}.top-category-widget-area .single-cat-widget .content-details span{display:inline-block;background:#fff;width:60%;height:1%}.top-category-widget-area .single-cat-widget:hover .overlay-bg{background:rgba(206,160,108,0.85);margin:7%;-webkit-transition:all 0.3s ease 0s;-moz-transition:all 0.3s ease 0s;-o-transition:all 0.3s ease 0s;transition:all 0.3s ease 0s}@media (max-width: 991px){.top-category-widget-area .single-cat-widget{margin-bottom:50px}}.post-content-area{background-color:#f9f9ff}
+            
+            
+            .projects_item {
+  position: relative;
+  overflow: hidden; }
+  .projects_item img {
+    width: 100%; }
+  .projects_item .hover {
+    position: absolute;
+    left: 0px;
+    bottom: -100%;
+    background: #a7cb00;
+    width: 100%;
+    padding: 36px;
+    transition: all 400ms ease; }
+    .projects_item .hover h4 {
+      color: #222222;
+      text-transform: uppercase;
+      font-size: 18px; }
+    .projects_item .hover p {
+      color: #222222;
+      max-width: 570px;
+      margin-bottom: 0px; }
+  .projects_item:hover .hover {
+    bottom: 0px; }
+
+            .row.m0 {
+  margin: 0px; }
+
+            .end{
+                color: #a7cb00;
+            }
+        
+            .p_120 {
+    padding-top: 40px;
+    padding-bottom: 120px;
+            
+</style>
+   
+   
+    </head>
+    <!--================Header Menu Area =================-->
+        <header class="header_area">
+            <div class="main_menu" id="mainNav">
+            	<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container box_1620">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<a class="navbar-brand logo_h" href="index.html"><img src="logotest.png" alt="" height="50" width="250"></a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+							<ul class="nav navbar-nav menu_nav ml-auto">
+								<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
+								<li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li> 
+								<li class="nav-item"><a class="nav-link" href="projects.html">Project</a>
+								<li class="nav-item"><a class="nav-link" href="services.html">Services</a>
+								<li class="nav-item"><a class="nav-link" href="/comingSoon/index.html">Join Us</a>
+<!--
+								<li class="nav-item submenu dropdown">
+									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Team</a>
+-->
+<!--
+									<ul class="dropdown-menu">
+										<li class="nav-item"><a class="nav-link" href="project-details.html">Project Details</a></li>
+										<li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>
+									</ul>
+-->
+<!--								</li> -->
+<!--
+								<li class="nav-item submenu dropdown">
+									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Achievement</a>
+-->
+<!--
+									<ul class="dropdown-menu">
+										<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+										<li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
+									</ul>
+-->
+<!--								</li> -->
+								<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+							</ul>
+						</div> 
+					</div>
+            	</nav>
+            </div>
+        </header>
+        <!--================Header Menu Area =================-->
+        
+        <!--================Home Banner Area =================-->
+        <section class="banner_area">
+            <div class="banner_inner d-flex align-items-center">
+            	<div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+				<div class="container">
+					<div class="banner_content text-center">
+						<h2>Projects</h2>
+						<div class="page_link">
+							<a href="index.html">Home</a>
+							<a href="projects.html">Projects</a>
+						</div>
+					</div>
+				</div>
+            </div>
+        </section>
+        <!--================End Home Banner Area =================-->
+         
+        <!-- Start Project Area NEW -->
+	<section class="project-area section-gap-top" id="project">
+		<div class="container">
+			<div class="row d-flex justify-content-center">
+				<div class="col-lg-8">
+<!--					<div class="section-title text-center">-->
+					<div class="main_title">
+						<h2>Our Recent Completed Projects</h2>
+						<p>View Our Project</p>
+					</div>
+				</div>
+				<div class="col-lg-12">
+					<div class="filters mb-5">
+						<ul>
+							<li class="active" data-filter=".completed">Completed Projects</li>
+<!--							<li data-filter=".popular"><a href="projects.html" style="color:grey">See All</a></li>-->
+<!--							<li data-filter=".latest">Latest</li>-->
+							<li data-filter=".ongoing">Ongoing</li>
+							<li data-filter=".upcoming">Upcoming</li>
+							<li data-filter=".all">See All</li>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="filters-content">
+				<div class="row grid">
+					<div class="col-lg-4 col-md-6 grid-sizer"></div>
+
+					<div class="col-lg-4 col-md-6 grid-item completed all" data-wow-delay="0s">
+						<div class="single-project">
+							<div class="relative">
+								<div class="thumb">
+									<a href="#"><img class="image img-fluid" src="img/projects/p1.png" alt=""></a>
+								</div>
+								<div class="middle">
+									<h4>Dell Villa, New York</h4>
+									<div class="cat">Architecture, Modern Design</div>
+								</div>
+								<a class="overlay" href=""></a>
+								<br>
+							</div>
+						</div>
+					</div>
+					<br><br>
+
+					<div class="col-lg-8 grid-item col-md-6 all ongoing all">
+						<div class="single-project">
+							<div class="relative">
+								<div class="thumb">
+                                    <a href="#"><img class="image img-fluid" src="img/projects/p2.png" alt=""></a>
+								</div>
+								<div class="middle">
+									<h4>Eedn Park, Singapore</h4>
+									<div class="cat">Architecture, Modern Design</div>
+								</div>
+								<a class="overlay" href="#"></a>
+								<br>
+							</div>
+						</div>
+					</div>
+					<br><br>
+
+					<div class="col-lg-8 grid-item col-md-6 all upcoming all">
+						<div class="single-project">
+							<div class="relative">
+								<div class="thumb">
+                                    <a href="#"><img class="image img-fluid" src="img/projects/p3.png" alt=""></a>
+								</div>
+								<div class="middle">
+									<h4>Sky Build, Paris</h4>
+									<div class="cat">Architecture, Modern Design</div>
+								</div>
+								<a class="overlay" href="#"></a>
+								<br>
+							</div>
+						</div>
+					</div>
+					<br><br>
+
+					<div class="col-lg-4 grid-item col-md-6 all upcoming all">
+						<div class="single-project">
+							<div class="relative">
+								<div class="thumb">
+                                    <a href="#"><img class="image img-fluid" src="img/projects/p4.png" alt=""></a>
+								</div>
+								<div class="middle">
+									<h4>Dell Villa, New York</h4>
+									<div class="cat">Architecture, Modern Design</div>
+								</div>
+								<a class="overlay" href="#"></a>
+								<br>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-12">
+					<div class="filters mb-">
+						<ul>
+<!--							<li><a href="projects.html" style="color: black; font-size: 17px">See all</a></li>-->
+<!--							<li data-filter=".popular">Popular</li>-->
+<!--							<li data-filter=".latest">Latest</li>-->
+<!--							<li data-filter=".following">Following</li>-->
+<!--							<li data-filter=".upcoming">Upcoming</li>-->
+						</ul>
+					</div>
+				</div>
+	</section>
+	
+	
+	
+	
+<!--
+	<section class="projects_area">
+        	<div class="row m0">
+        		<div class="projects_item wd_18">
+					<img src="img/projects/projects-1.jpg" alt="">
+					<div class="hover">
+						<h4>Alex Complex for esidence</h4>
+						<p>LCD screens are uniquely modern in style, and the liquid crystals that make them work have allowed humanity to create  slimmer.</p>
+					</div>
+				</div>
+				<div class="projects_item wd_18">
+					<img src="img/projects/projects-2.jpg" alt="">
+					<div class="hover">
+						<h4>Alex Complex for esidence</h4>
+						<p>LCD screens are uniquely modern in style, and the liquid crystals that make them work have allowed humanity to create  slimmer.</p>
+					</div>
+				</div>
+				<div class="projects_item wd_44">
+					<img src="img/projects/projects-3.jpg" alt="">
+					<div class="hover">
+						<h4>Alex Complex for esidence</h4>
+						<p>LCD screens are uniquely modern in style, and the liquid crystals that make them work have allowed humanity to create  slimmer.</p>
+					</div>
+				</div>
+				<div class="projects_item wd_18">
+					<img src="img/projects/projects-4.jpg" alt="">
+					<div class="hover">
+						<h4>Alex Complex for esidence</h4>
+						<p>LCD screens are uniquely modern in style, and the liquid crystals that make them work have allowed humanity to create  slimmer.</p>
+					</div>
+				</div>
+        	</div>
+        </section>
+	
+-->
+	
+	
+	<!-- End Project Area -->
+
+        <!--================End Feature Area =================-->
+        
+        <!--================Post Slider Area =================-->
+<!--
+        <section class="post_slider_area">
+        	<div class="main_title">
+                <h2>Our Recent Completed Projects</h2>
+				<p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $.17 each.</p>
+			</div>
+			<div class="post_slider_inner owl-carousel">
+				<div class="item">
+					<div class="post_s_item">
+-->
+<!--
+						<div class="post_img">
+							<img src="img/post-slider/post-s-1.jpg" alt="">
+						</div>
+						
+-->
+<!--
+						<div class="post_text">
+							<a href="single-blog.html"><h4>Nest Protect: 2nd Gen Smoke + CO Alarm</h4></a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+							<a class="main_btn" href="#">View Details</a>
+						</div>
+-->
+<!--
+                <div class="row m0">
+               <div class="projects_item wd_18">
+					<img src="img/post-slider/post-s-1.jpg" alt="">
+					<div class="hover">
+						<h4>Alex Complex for esidence</h4>
+						<p>LCD screens are uniquely modern in style, and the liquid crystals that make them work have allowed humanity to create  slimmer.</p>
+					</div>
+				</div>
+                        </div>
+				
+				
+				
+					</div>
+				</div>
+				
+				
+				<div class="item">
+					<div class="post_s_item">
+-->
+<!--
+						<div class="post_img">
+							<img src="img/post-slider/post-s-2.jpg" alt="">
+						</div>
+						<div class="post_text">
+							<a href="single-blog.html"><h4>Nest Protect: 2nd Gen Smoke + CO Alarm</h4></a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+							<a class="main_btn" href="#">View Details</a>
+						</div>
+-->
+						
+<!--
+						<div class="row m0">
+						<div class="projects_item wd_18">
+					<img src="img/post-slider/post-s-2.jpg" alt="">
+					<div class="hover">
+						<h4>Alex Complex for esidence</h4>
+						<p>LCD screens are uniquely modern in style, and the liquid crystals that make them work have allowed humanity to create  slimmer.</p>
+					</div>
+				</div>
+                        </div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="post_s_item">
+-->
+<!--
+						<div class="post_img">
+							<img src="img/post-slider/post-s-2.jpg" alt="">
+						</div>
+						<div class="post_text">
+							<a href="single-blog.html"><h4>Nest Protect: 2nd Gen Smoke + CO Alarm</h4></a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+							<a class="main_btn" href="#">View Details</a>
+						</div>
+-->
+						
+<!--
+						<div class="row m0">
+						<div class="projects_item wd_18">
+					<img src="img/post-slider/post-s-3.jpg" alt="">
+					<div class="hover">
+						<h4>Alex Complex for esidence</h4>
+						<p>LCD screens are uniquely modern in style, and the liquid crystals that make them work have allowed humanity to create  slimmer.</p>
+					</div>
+				</div>
+                        </div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="post_s_item">
+-->
+<!--
+						<div class="post_img">
+							<img src="img/post-slider/post-s-4.jpg" alt="">
+						</div>
+						<div class="post_text">
+							<a href="single-blog.html"><h4>Nest Protect: 2nd Gen Smoke + CO Alarm</h4></a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+							<a class="main_btn" href="#">View Details</a>
+						</div>
+-->
+<!--
+                <div class="row m0">
+						<div class="projects_item wd_18">
+					<img src="img/post-slider/post-s-4.jpg" alt="">
+					<div class="hover">
+						<h4>Alex Complex for esidence</h4>
+						<p>LCD screens are uniquely modern in style, and the liquid crystals that make them work have allowed humanity to create  slimmer.</p>
+					</div>
+				</div>
+                        </div>
+					</div>
+				</div>
+			</div>
+        </section>
+-->
+        <!--================End Post Slider Area =================-->
+        <div class="main_title">
+						<h2>Our Recent Completed Projects</h2>
+						<p>View Our Project</p>
+					<br><br>
+        
+        <div class="embed-responsive embed-responsive-21by9">
+  <iframe src="https://player.vimeo.com/video/234513283?" width="640" height="360" frameborder="0" allowfullscreen="" title="About Codecademy"></iframe>
+</div>
+
+        </div>
+        
+        
+        <!--================Testimonials Area =================-->
+        <section class="testimonials_area p_120">
+        	<div class="container">
+        		<div class="main_title">
+        			<h2>What Customer Say About Us</h2>
+        			<p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $.17 each.</p>
+        		</div>
+        		<div class="testi_slider owl-carousel">
+        			<div class="item">
+        				<div class="testi_item">
+							<div class="media">
+								<div class="d-flex">
+									<img src="img/testimonials/testi-1.png" alt="">
+								</div>
+								<div class="media-body">
+									<p>Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware.</p>
+									<h4>Mark Alviro Wiens</h4>
+									<div class="rating">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-half-o"></i>
+									</div>
+								</div>
+							</div>
+        				</div>
+        			</div>
+        			<div class="item">
+        				<div class="testi_item">
+							<div class="media">
+								<div class="d-flex">
+									<img src="img/testimonials/testi-2.png" alt="">
+								</div>
+								<div class="media-body">
+									<p>Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware.</p>
+									<h4>Mark Alviro Wiens</h4>
+									<div class="rating">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-half-o"></i>
+									</div>
+								</div>
+							</div>
+        				</div>
+        			</div>
+        			<div class="item">
+        				<div class="testi_item">
+							<div class="media">
+								<div class="d-flex">
+									<img src="img/testimonials/testi-1.png" alt="">
+								</div>
+								<div class="media-body">
+									<p>Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware.</p>
+									<h4>Mark Alviro Wiens</h4>
+									<div class="rating">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-half-o"></i>
+									</div>
+								</div>
+							</div>
+        				</div>
+        			</div>
+        			<div class="item">
+        				<div class="testi_item">
+							<div class="media">
+								<div class="d-flex">
+									<img src="img/testimonials/testi-2.png" alt="">
+								</div>
+								<div class="media-body">
+									<p>Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware.</p>
+									<h4>Mark Alviro Wiens</h4>
+									<div class="rating">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-half-o"></i>
+									</div>
+								</div>
+							</div>
+        				</div>
+        			</div>
+        			<div class="item">
+        				<div class="testi_item">
+							<div class="media">
+								<div class="d-flex">
+									<img src="img/testimonials/testi-1.png" alt="">
+								</div>
+								<div class="media-body">
+									<p>Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware.</p>
+									<h4>Mark Alviro Wiens</h4>
+									<div class="rating">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-half-o"></i>
+									</div>
+								</div>
+							</div>
+        				</div>
+        			</div>
+        			<div class="item">
+        				<div class="testi_item">
+							<div class="media">
+								<div class="d-flex">
+									<img src="img/testimonials/testi-2.png" alt="">
+								</div>
+								<div class="media-body">
+									<p>Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware.</p>
+									<h4>Mark Alviro Wiens</h4>
+									<div class="rating">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-half-o"></i>
+									</div>
+								</div>
+							</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+        <!--================End Testimonials Area =================-->
+        
+        
+        
+        <!--================Clients Logo Area =================-->
+    
+        <!--================End Clients Logo Area =================-->
+        
+        <!--================Our Blog Area =================-->
+        
+        <!--================End Our Blog Area =================-->
+        
+        <!--================Footer Area =================-->
+        <footer class="footer_area p_120">
+        	<div class="container">
+        		<div class="row footer_inner">
+        			<div class="col-lg-5 col-sm-6">
+        				<aside class="f_widget ab_widget">
+        					<div class="f_title">
+        						<h3>About Us</h3>
+        					</div>
+        					<p>Macziom Architects is a leading consultant in Interior Designs and Architectural 
+Services in India. The firm is a Delhi based multidisciplinary architecture, Interior 
+design, Landscaping, Construction and Urban Planning Firm founded in 2019. 
+</p>
+        				</aside>
+        			</div>
+        			<div class="col-lg-5 col-sm-6">
+        				<aside class="f_widget news_widget">
+        					<div class="f_title">
+        						<h3></h3>
+        					</div>
+        					<p>Stay updated with our latest trends</p>
+        					<div id="mc_embed_signup">
+                                <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
+                                	<div class="input-group d-flex flex-row">
+                                        <input name="EMAIL" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
+                                        <button class="btn sub-btn"><span class="lnr lnr-arrow-right"></span></button>		
+                                    </div>				
+                                    <div class="mt-10 info"></div>
+                                </form>
+                            </div>
+        				</aside>
+        			</div>
+        			<div class="col-lg-2">
+        				<aside class="f_widget social_widget">
+        					<div class="f_title">
+        						<h3>Follow Us</h3>
+        					</div>
+        					<p>Let us be social</p>
+        					<ul class="list">
+        						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        						<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+        						<li><a href="#"><i class="fa fa-behance"></i></a></li>
+        					</ul>
+        				</aside>
+        			</div>
+        		</div>
+        		<div class="copy_right_text">
+        			<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;&nbsp;<script>document.write(new Date().getFullYear());</script><br>Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorib</a><br>
+Modified by Kamran Ahmed
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+               <p class="end">Macziom Architects</p>
+        		</div>
+        	</div>
+        </footer>
+        <!--================End Footer Area =================-->
+        
+        
+        
+        
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/stellar.js"></script>
+        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+        <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+        <script src="vendors/isotope/isotope-min.js"></script>
+        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+        <script src="vendors/counter-up/jquery.counterup.js"></script>
+        <script src="js/mail-script.js"></script>
+        <script src="vendors/popup/jquery.magnific-popup.min.js"></script>
+        <script src="js/theme.js"></script>
+    
+    
+    <script src="js/vendor/ARC.jquery-2.2.4.min.js"></script>
+
+	<script src="js/ARC.jquery.ajaxchimp.min.js"></script>
+	<script src="js/ARC.owl.carousel.min.js"></script>
+	<script src="js/ARC.isotope.pkgd.min.js"></script>
+	<script src="js/ARC.jquery.magnific-popup.min.js"></script>
+	<script src="js/ARC.jquery.sticky.js"></script>
+	<script src="js/ARC.main.js"></script>
+    
+    </body>
+</html>
